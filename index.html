@@ -1,0 +1,163 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+     <div class="iwan"> 
+     <h1>Counting Cards</h1> <br> <br>
+     <form name="formcalc"> 
+     <h5> Select
+     <select class="monthInput" name="month1" id="">
+            
+        <option value="A">A</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="J">J</option>
+        <option value="Q">Q</option>
+        <option value="K">K</option>
+    </select>
+</h5>
+
+
+<h5> Select
+    <select class="monthInput" name="month2" id="count">
+           
+       <option value="A">A</option>
+       <option value="2">2</option>
+       <option value="3">3</option>
+       <option value="4">4</option>
+       <option value="5">5</option>
+       <option value="6">6</option>
+       <option value="7">7</option>
+       <option value="8">8</option>
+       <option value="9">9</option>
+       <option value="10">10</option>
+       <option value="J">J</option>
+       <option value="Q">Q</option>
+       <option value="K">K</option>
+   </select>
+</h5>
+
+
+<h5> Select
+    <select class="monthInput" name="month3" id="count">
+           
+       <option value="A">A</option>
+       <option value="2">2</option>
+       <option value="3">3</option>
+       <option value="4">4</option>
+       <option value="5">5</option>
+       <option value="6">6</option>
+       <option value="7">7</option>
+       <option value="8">8</option>
+       <option value="9">9</option>
+       <option value="10">10</option>
+       <option value="J">J</option>
+       <option value="Q">Q</option>
+       <option value="K">K</option>
+   </select>
+</h5>
+
+<h5> Select
+    <select class="monthInput" name="month4" id="count">
+           
+       <option value="A">A</option>
+       <option value="2">2</option>
+       <option value="3">3</option>
+       <option value="4">4</option>
+       <option value="5">5</option>
+       <option value="6">6</option>
+       <option value="7">7</option>
+       <option value="8">8</option>
+       <option value="9">9</option>
+       <option value="10">10</option>
+       <option value="J">J</option>
+       <option value="Q">Q</option>
+       <option value="K">K</option>
+   </select>
+</h5>
+
+<h5> Select
+    <select class="monthInput" name="month5" id="">
+           
+       <option value="A">A</option>
+       <option value="2">2</option>
+       <option value="3">3</option>
+       <option value="4">4</option>
+       <option value="5">5</option>
+       <option value="6">6</option>
+       <option value="7">7</option>
+       <option value="8">8</option>
+       <option value="9">9</option>
+       <option value="10">10</option>
+       <option value="J">J</option>
+       <option value="Q">Q</option>
+       <option value="K">K</option>
+   </select>
+</h5>
+<h5>Result:
+    <input type="text" name="txtres"> <br>
+</h5>
+<input type="button" id="card" value="Calculate" onclick="sumValue">
+</form>
+</div>
+      
+
+    <script type="text/javascript">
+        var count = 0;
+
+function sumValue() {
+// Only change code below this line
+
+var month1, month2, month3, month4, month5, res;
+month1=Number(document.formalc.month1.value);
+month2=Number(document.formalc.month2.value);
+month3=Number(document.formalc.month3.value);
+month4=Number(document.formalc.month4.value);
+month5=Number(document.formalc.month5.value);
+document.formcalc.txtres.value=re;
+
+switch (card){
+case 2:
+case 3:
+case 4:
+case 5:
+case 6:
+  count++;
+  break;
+case 7:
+case 8:
+case 9:
+  count += 0;
+  break;
+case 10:
+case "J":
+case "Q":
+case "K":
+case "A":
+  count--;
+  break;
+}
+if (count > 0){
+return count + " Bet";
+}else if (count<=0) {
+return count + " Hold";
+}
+}
+    </script>
+      
+      
+ </body>
+ </html>
